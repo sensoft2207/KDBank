@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_main_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_heading"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="35dp"/>
+
+        <com.example.kidbank.kidbanknew.Widget.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Brukernavn"
+            android:textAllCaps="true"
+            android:textColor="@color/white_color" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:cardElevation="16dp">
+
+            <com.example.kidbank.kidbanknew.Widget.MyEditText
+                android:id="@+id/et_login_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0000"
+                android:gravity="center"
+                android:hint="Brukernavn"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </android.support.v7.widget.CardView>
+
+
+        <com.example.kidbank.kidbanknew.Widget.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Password"
+            android:textAllCaps="true"
+            android:textColor="@color/white_color" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:cardElevation="16dp">
+
+            <com.example.kidbank.kidbanknew.Widget.MyEditText
+                android:id="@+id/et_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0000"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:hint="PASSWORD"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:padding="2dp"
+            android:weightSum="2"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <LinearLayout
+                android:id="@+id/ln_login"
+                android:elevation="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/background_login_btn"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <com.example.kidbank.kidbanknew.Widget.MyTextView
+                    android:gravity="center"
+                    android:textColor="@color/white_color"
+                    android:textSize="15sp"
+                    android:text="Login"
+                    android:textAllCaps="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln_signup"
+                android:elevation="16dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/background_signup_btn"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <com.example.kidbank.kidbanknew.Widget.MyTextView
+                    android:gravity="center"
+                    android:textColor="@color/white_color"
+                    android:textSize="15sp"
+                    android:text="Ny bruker"
+                    android:textAllCaps="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_footer"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</FrameLayout>

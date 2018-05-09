@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">KidsBank</string>
+
+    <!--Comman String-->
+    <string name="ws_error">Oops! something went wrong</string>
+    <string name="no_internet">Oops! No Internet Connection</string>
+
+
+    <!--Registration activity-->
+    <string name="name">Please enter name</string>
+    <string name="username">Please enter username</string>
+    <string name="password">Please enter password</string>
+    <string name="birthdate">Please choose birthdate</string>
+    <string name="gender">Please select gender</string>
+    <string name="profile_pic">Please select profile pic</string>
+
+    <!--Add task-->
+    <string name="task_name">Please enter task name</string>
+    <string name="set_value">Please set value</string>
+    <string name="deadline">Please choose deadline</string>
+    <string name="targetd_child">Please select target child</string>
+
+    <!--send money-->
+    <string name="enter_message">Please enter message</string>
+    <string name="enter_amount">Please enter amount</string>
+
+    <!--Piggy bank add-->
+    <string name="money_id">Please drag and drop money</string>
+
+
+    <string name="dialog_ok">OK</string>
+    <string name="permission_Req">Please allow permissions to continue with app</string>
+
+    <string name="demo_string">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+</resources>

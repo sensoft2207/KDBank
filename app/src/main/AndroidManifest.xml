@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kidbank.kidbanknew">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".Network.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.HomeActivityParent"
+            android:screenOrientation="portrait"/>
+
+
+        <activity android:name=".activity.EditProfile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".activity.SparemalActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.PengerActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.KontakterActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.OppgaverActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.SendKrActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.TaskManagerActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.AddImageSparemal"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.TaskDetailActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <activity android:name=".activity.AddTaskActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".activity.SendMoneyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <stroke
+        android:width="2dp"
+        android:color="#ffff"/>
+
+    <solid android:color="@color/login_btn_back"/>
+
+</shape>

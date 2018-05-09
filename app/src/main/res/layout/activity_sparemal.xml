@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_main_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/my_appbar_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="15dp">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginRight="-10dp"
+                        android:layout_marginTop="45dp"
+                        android:elevation="25dp"
+                        android:src="@drawable/lerni_wishlist" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/iv_profile_pic"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:layout_gravity="center"
+                                    app:civ_border_color="@color/colorPrimaryDark"
+                                    app:civ_border_width="3dp"
+                                    app:civ_circle_background_color="#0000"
+                                    app:civ_fill_color="@color/white_color"/>
+
+                            </FrameLayout>
+
+                            <com.example.kidbank.kidbanknew.Widget.MyTextView
+                                android:id="@+id/tv_user_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="20dp"
+                                android:gravity="center"
+                                android:text="max12"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white_color" />
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginTop="30dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="6dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <com.example.kidbank.kidbanknew.Widget.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="kr"
+                                    android:textSize="22sp"
+                                    android:textStyle="bold" />
+
+                                <com.example.kidbank.kidbanknew.Widget.MyTextView
+                                    android:id="@+id/tv_balance"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="5dp"
+                                    android:gravity="center"
+                                    android:text="200"
+                                    android:textColor="@color/text_color_secondary"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="top|left"
+                        android:elevation="25dp"
+                        android:src="@drawable/cancel"
+                        android:visibility="invisible"/>
+
+                    <ImageView
+                        android:id="@+id/iv_add_wishlist"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="top|right"
+                        android:elevation="25dp"
+                        android:src="@drawable/wishlist_add" />
+
+
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp_sparemal"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/rectangle_shap">
+
+
+                    </android.support.v4.view.ViewPager>
+
+                    <com.example.kidbank.kidbanknew.Widget.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center|left"
+                        android:text="DU MANGLER KR 20"
+                        android:paddingTop="28dp"
+                        android:paddingLeft="25dp"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_previous"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/back_img_next_prev"
+                        android:elevation="25dp"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_back" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_next"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="45dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/back_img_next_prev"
+                        android:elevation="25dp"
+                        android:padding="8dp"
+                        android:rotation="180"
+                        android:src="@drawable/ic_back" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2.53">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:background="@color/login_btn_back"
+                                android:gravity="center">
+
+                                <com.example.kidbank.kidbanknew.Widget.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Kr 220"
+                                    android:textColor="@color/white_color"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </android.support.v7.widget.CardView>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1.2"
+                            android:padding="10dp"
+                            android:src="@drawable/plus" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2.53">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:background="@color/ok_bottom_back"
+                                android:gravity="center">
+
+                                <com.example.kidbank.kidbanknew.Widget.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Kr 30"
+                                    android:textColor="@color/white_color"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1.2"
+                            android:padding="10dp"
+                            android:src="@drawable/equal" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2.53">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:background="@color/sign_btn_back"
+                                android:gravity="center">
+
+                                <com.example.kidbank.kidbanknew.Widget.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="Kr 250"
+                                    android:textColor="@color/white_color"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

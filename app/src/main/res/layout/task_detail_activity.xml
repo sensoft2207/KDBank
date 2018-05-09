@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_main_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/my_appbar_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:orientation="vertical">
+
+                    <com.example.kidbank.kidbanknew.Widget.MyTextView
+                        android:id="@+id/tv_taskdetail_name"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white_color"
+                        android:textSize="15sp"
+                        android:paddingLeft="5dp"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_task_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:padding="5dp"
+                            android:scaleType="fitXY"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:padding="15dp">
+
+                            <com.example.kidbank.kidbanknew.Widget.MyTextView
+                                android:id="@+id/tv_task_status"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|right"
+                                android:layout_gravity="right"
+                                android:textAllCaps="true"
+                                android:padding="5dp"
+                                android:background="@drawable/back_task_status"
+                                android:textColor="@color/white_color"
+                                android:textSize="15sp"
+                                android:paddingLeft="5dp"/>
+
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <com.example.kidbank.kidbanknew.Widget.MyTextView
+                        android:id="@+id/tv_task_deadline"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|right"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_color_red"
+                        android:textSize="12sp"
+                        android:paddingLeft="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/hand"/>
+
+                        <com.example.kidbank.kidbanknew.Widget.MyTextView
+                            android:id="@+id/tv_task_kidname"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="Din profil"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white_color"
+                            android:textSize="15sp"
+                            android:paddingLeft="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/hand"/>
+
+                        <com.example.kidbank.kidbanknew.Widget.MyTextView
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="Amount :"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white_color"
+                            android:textSize="15sp"
+                            android:paddingLeft="10dp"/>
+
+                        <com.example.kidbank.kidbanknew.Widget.MyTextView
+                            android:id="@+id/tv_task_amount"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:text="Din profil"
+                            android:textAllCaps="true"
+                            android:textColor="#DC5831"
+                            android:textSize="15sp"
+                            android:paddingLeft="10dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
